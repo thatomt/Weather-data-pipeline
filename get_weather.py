@@ -13,3 +13,12 @@ params = {
     "timezone": "auto",
     "past_days": 7,
 }
+print("Downloading weather data...")
+response = requests.get(url, params=params)
+data = response.json()
+
+
+with open("weather_raw.json", "w") as f:
+    json.dump(data, f, indent=2)
+
+print("Done. Saved to weather_raw.json")
