@@ -1,0 +1,4 @@
+weather_raw.json
+weather_clean.csv
+weather.db
+__pycache__/
